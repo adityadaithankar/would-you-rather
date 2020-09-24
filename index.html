@@ -4,6 +4,7 @@
 <head>
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
   <meta content="utf-8" http-equiv="encoding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Would you rather? A fun party game | Developed by Aditya Daithankar</title>
 
@@ -14,26 +15,44 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 
-  <script src="js/load-questions.js"></script>
+  <script src="js/display-questions.js"></script>
 
 </head>
 
 <body>
+
   <h1>Would you rather?</h1>
   <h2>
     <a href="html/rules.html">Rules</a>
   </h2>
 
-  <div class="question-card">
-    <h3>
-      <p id="question-card" onclick="displayQuestion()">NEXT QUESTION</p>
-    </h3>
+  <p>Select any card below to reveal the next question</p>
+  <div class="row">
+    <div class="column">
+      <div class="question-card" onclick="selectQuestionType('GROSS')">
+        <h2>GROSS</h2>
+      </div>
+    </div>
+    <div class="column">
+      <div class="question-card" id="weird-card" onclick="selectQuestionType()">
+        <h2>WEIRD</h2>
+      </div>
+    </div>
+    <div class="column">
+      <div class="question-card" onclick="selectQuestionType()">
+        <h2>NAUGHTY</h2>
+      </div>
+    </div>
   </div>
 
   <div>
     <h3>
-      <p id="question">Are you ready to have fun? Click on the NEXT QUESTION card above.</p>
+      <p id="question"></p>
     </h3>
+  </div>
+
+  <div>
+    <button onclick="location.reload()">RELOAD GAME</button>
   </div>
 </body>
 
