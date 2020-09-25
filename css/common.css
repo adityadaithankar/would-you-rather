@@ -6,6 +6,7 @@ body {
   background-image: url("../images/background.jpeg");
   background-repeat: repeat;
   background-color: rgba(255, 255, 255, 0.6);
+  margin: 0;
 }
 
 h1 {
@@ -18,4 +19,19 @@ h2 {
 
 * {
   box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+main {
+  flex: 1;
 }
