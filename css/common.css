@@ -5,37 +5,29 @@ body {
   line-height: 1.5;
   background-image: url("../images/whatsapp.jpeg");
   background-repeat: repeat;
-  background-color: rgba(255,255,255,0.6);
-  /* background-blend-mode: luminosity; */
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 h1 {
   color: #0366d6;
 }
 
-h2, h3 {
-  /* color: #24292e; */
-}
-
-.question-card {
-  cursor: pointer;
-  background-color: #2ea44f;
-  padding: 10px;
-}
-
 * {
   box-sizing: border-box;
 }
 
-/* Create three equal columns that floats next to each other */
+.responsive {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
 .column {
   float: left;
-  width: 33.33%;
   padding: 10px;
   text-align: left;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -48,31 +40,7 @@ h2, h3 {
 
 .middle {
   width: 50%;
-  background-color: rgba(0,0,0,0.6);
-  background-blend-mode: lighten;
-  color: white;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.disable-card {
-  pointer-events: none;
-  opacity: 0.5;
-}
-
-.responsive {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-}
-
-.game-intro {
-  text-align: left;
+  background-color: grey;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */

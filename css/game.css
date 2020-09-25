@@ -1,0 +1,17 @@
+.question-card {
+  cursor: pointer;
+  background-color: #2ea44f;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  text-align: left;
+}
+
+.disable-card {
+  pointer-events: none;
+  opacity: 0.5;
+}
