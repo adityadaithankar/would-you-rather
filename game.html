@@ -23,6 +23,7 @@
 
   <script src="js/questions/gross.js"></script>
   <script src="js/questions/naughty.js"></script>
+  <script src="js/questions/safe.js"></script>
   <script src="js/questions/weird.js"></script>
   <script src="js/display-questions.js"></script>
 
@@ -31,7 +32,7 @@
 <body>
   <h1>Would you rather?</h1>
 
-  <p style="color: white;">Select any card below to reveal the next question</p>
+  <p style="color: white;">Select any card below to reveal a question. Choose an answer. You cannot say neither or both. You have to choose one of the two options.</p>
   <div class="row">
 
     <div class="column">
@@ -45,6 +46,13 @@
       <div class="question-card" id="gross-card" onclick="selectQuestionType('gross')">
         <!-- <h2>GROSS</h2> -->
         <img src="images/gross.png" class="responsive-image">
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="question-card" id="safe-card" onclick="selectQuestionType('safe')">
+        <!-- <h2>GROSS</h2> -->
+        <img src="images/sunflower.png" class="responsive-image">
       </div>
     </div>
 

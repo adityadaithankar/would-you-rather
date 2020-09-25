@@ -1,16 +1,3 @@
-let grossQuestions = [
-  "Hello",
-  "How",
-  "You",
-  "Yes",
-  "Me"
-];
-
-let weirdQuestions = [
-  "Ho",
-  "Ka"
-];
-
 let qList = [{
     "type": "gross",
     "list": gross
@@ -18,6 +5,10 @@ let qList = [{
   {
     "type": "weird",
     "list": weird
+  },
+  {
+    "type": "safe",
+    "list": safe
   },
   {
     "type": "naughty",
