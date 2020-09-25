@@ -6,6 +6,7 @@
 
 .disable-card {
   pointer-events: none;
+  background-color: grey;
   opacity: 0.5;
 }
 
@@ -20,14 +21,18 @@
 }
 
 .column {
-  flex: 20%;
   padding: 10px;
   max-width: 300px;
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-/* @media screen and (max-width: 992px) {
+@media screen and (max-width: 960px) {
   .column {
-    flex: 50%;
+    max-width: 200px;
   }
-} */
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    max-width: 150px;
+  }
+}
