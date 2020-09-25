@@ -1,0 +1,29 @@
+<p>Select any card below to reveal the next question</p>
+<div class="row">
+  <div class="column">
+    <div class="question-card" onclick="selectQuestionType('GROSS')">
+      <h2>GROSS</h2>
+    </div>
+  </div>
+  <div class="column">
+    <div class="question-card" id="weird-card" onclick="selectQuestionType()">
+      <h2>WEIRD</h2>
+    </div>
+  </div>
+  <div class="column">
+    <div class="question-card" onclick="selectQuestionType()">
+      <h2>NAUGHTY</h2>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h3>
+    <p id="question"></p>
+  </h3>
+</div>
+
+<div>
+  <button onclick="location.reload()">RELOAD GAME</button>
+</div>
+</body>

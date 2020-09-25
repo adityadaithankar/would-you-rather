@@ -20,40 +20,34 @@
 </head>
 
 <body>
-
   <h1>Would you rather?</h1>
   <h2>
     <a href="html/rules.html">Rules</a>
   </h2>
 
-  <p>Select any card below to reveal the next question</p>
-  <div class="row">
-    <div class="column">
-      <div class="question-card" onclick="selectQuestionType('GROSS')">
-        <h2>GROSS</h2>
-      </div>
-    </div>
-    <div class="column">
-      <div class="question-card" id="weird-card" onclick="selectQuestionType()">
-        <h2>WEIRD</h2>
-      </div>
-    </div>
-    <div class="column">
-      <div class="question-card" onclick="selectQuestionType()">
-        <h2>NAUGHTY</h2>
-      </div>
-    </div>
-  </div>
+  <img src="images/wyr-1280x640.png" alt="Would you rather" class="responsive">
 
-  <div>
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column middle">
+
     <h3>
-      <p id="question"></p>
+      "Would you rather" is a conversation or party game that poses a dilemma in the form of a question beginning with "would you rather".<br>
+
+      The dilemma can be between two supposedly good options such as "Would you rather have the power of flight or the power of invisibility?", two attractive choices such as "Would you rather have money or have fame?", or two supposedly bad options such as "Would you rather sleep with your best friend's lover or your lover's best friend?" The players, sometimes
+      including the questioner, then must choose their answers. Answering "neither" or "both" is against the rules. This leads the players to debate their rationales.
+
+      Any number of players are invited to contribute to the game. One way to play is a drinking game, in which those who chose the unpopular option must drink. For example, if when asked "Would you rather sleep with your best friend's lover or your
+      lover's best friend?", more people decide they would prefer to sleep with their best friend's lover than their lover's best friend, then all those that said they would rather sleep with their lover's best friend would then have to drink.
     </h3>
   </div>
-
-  <div>
-    <button onclick="location.reload()">RELOAD GAME</button>
+  <div class="column right" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
   </div>
-</body>
+</div>
 
 </html>
