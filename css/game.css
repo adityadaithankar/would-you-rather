@@ -1,3 +1,8 @@
+.top-nav {
+  background-color: #d9e3ee;
+  color: #091b25;
+}
+
 .question-card {
   cursor: pointer;
   background-color: #2ea44f;
