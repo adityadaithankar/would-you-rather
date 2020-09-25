@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Would you rather? A fun party game | Developed by Aditya Daithankar" />
+  <meta property="og:description" content="Choose between two options and share laughs, thoughts and ideas. A great way to know your friends, family, colleagues or that special someone." />
+  <meta property="og:url" content="https://adityadaithankar.github.io/would-you-rather/" />
+  <meta property="og:image" content="https://adityadaithankar.github.io/would-you-rather/images/wyr-512x512.png" />
+
+  <title>Would you rather? A fun party game | Developed by Aditya Daithankar</title>
+
+  <link rel="icon" type="image/jpg" href="images/wyr-32x32.png">
+  <link rel="icon" type="image/jpg" href="images/wyr-16x16.png">
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/game.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+  <script src="js/display-questions.js"></script>
+
+</head>
+
+<body>
+  <h1>Would you rather?</h1>
+
+  <p style="background-color: grey;">Select any card below to reveal the next question</p>
+  <div class="row">
+
+    <div class="column">
+      <div class="question-card" id="weird-card" onclick="selectQuestionType('weird')">
+        <h2>WEIRD</h2>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="question-card" id="gross-card" onclick="selectQuestionType('gross')">
+        <h2>GROSS</h2>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="question-card" id="naughty-card" onclick="selectQuestionType('naughty')">
+        <h2>NAUGHTY</h2>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="background-color: grey;">
+    <h3>
+      <p id="question"></p>
+    </h3>
+  </div>
+
+  <div>
+    <button onclick="location.reload()">RELOAD GAME</button>
+  </div>
+
+</body>
+
+</html>
