@@ -2,14 +2,15 @@ body {
   /* background-color: #fafbfc; */
   font-family: 'Comic Neue', cursive;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.4;
   background-image: url("../images/background.jpeg");
   background-repeat: repeat;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
 h1 {
-  color: #0366d6;
+  background-color: #d9e3ee;
+  color: #091b25;
 }
 
 * {

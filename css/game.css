@@ -7,11 +7,18 @@
 .disable-card {
   pointer-events: none;
   background-color: grey;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .responsive-image {
   width: 100%;
+}
+
+button {
+  font-family: 'Comic Neue', cursive;
+  width: 25%;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .row {
@@ -29,10 +36,18 @@
   .column {
     max-width: 200px;
   }
+
+  button {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .column {
     max-width: 150px;
+  }
+
+  button {
+    width: 75%;
   }
 }
