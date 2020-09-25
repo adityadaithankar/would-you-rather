@@ -87,7 +87,7 @@ button {
   position: absolute;
   background-color: #d9e3ee;
   font-size: 0.7em;
-  min-width: 160px;
+  min-width: max-content;
   text-align: left;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
