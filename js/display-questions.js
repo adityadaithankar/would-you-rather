@@ -1,4 +1,4 @@
-let qList = [{
+let allQuestions = [{
     "type": "gross",
     "list": gross
   },
@@ -16,42 +16,30 @@ let qList = [{
   },
 ];
 
-function selectQList(questionType) {
-  for (i = 0; i < qList.length; i++) {
-    if (qList[i].type == questionType) {
-      return qList[i];
+function getQuestion(questionType) {
+  for (i = 0; i < allQuestions.length; i++) {
+    if (allQuestions[i].type == questionType) {
+      displayQuestion(allQuestions[i]);
+      break;
     }
   }
 }
 
-function selectQuestionType(questionType) {
-  let questionsList = selectQList(questionType);
-  displayQuestion(questionsList);
-}
+function displayQuestion(questionsList) {
 
-function displayQuestion(queList) {
+  let questions = questionsList.list;
 
-  let questions = queList.list;
-
-  console.log(questions);
   if (questions.length > 0) {
     let random = Math.floor(Math.random() * questions.length);
-    let qt = "Would you rather " + questions[random] + "?";
-    document.getElementById("question").innerHTML = qt;
 
-    console.log(questions[random]);
+    document.getElementById("question").innerHTML = "Would you rather " + questions[random] + "?";
 
     // Update array to remove the question that has been displayed
     if (random > -1) {
       questions.splice(random, 1);
     }
 
-    console.log(questions);
-  } else { // If all questions from the array have been displayed, show end of game message
-    // document.getElementById("question").innerHTML = "END OF GAME. Reload page";
-    // document.getElementById("weird-card").classList.remove("question-card");
-    let cardId = queList.type + "-card";
-    document.getElementById(cardId).classList.add("disable-card");
-    // Function to reload page -> location.reload();
+  } else {
+    document.getElementById(questionsList.type + "-card").classList.add("disable-card");
   }
 }
