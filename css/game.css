@@ -28,6 +28,9 @@
 
 button {
   font-family: 'Comic Neue', cursive;
+  font-size: 1em;
+  background-color: #2ea44f;
+  color: #d9e3ee;
   width: 25%;
   padding: 10px;
   cursor: pointer;
