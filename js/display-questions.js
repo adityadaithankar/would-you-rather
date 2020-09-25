@@ -11,19 +11,17 @@ let weirdQuestions = [
   "Ka"
 ];
 
-let naughtyQuestions = ["sleep with your best friend's lover or your lover's best friend"];
-
 let qList = [{
     "type": "gross",
-    "list": grossQuestions
+    "list": gross
   },
   {
     "type": "weird",
-    "list": weirdQuestions
+    "list": weird
   },
   {
     "type": "naughty",
-    "list": naughtyQuestions
+    "list": naughty
   },
 ];
 
