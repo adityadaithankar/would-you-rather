@@ -1,7 +1,12 @@
 body {
-  background-color: #fafbfc;
+  /* background-color: #fafbfc; */
   font-family: 'Comic Neue', cursive;
   text-align: center;
+  line-height: 1.5;
+  background-image: url("../images/whatsapp.jpeg");
+  background-repeat: repeat;
+  background-color: rgba(255,255,255,0.6);
+  /* background-blend-mode: luminosity; */
 }
 
 h1 {
@@ -9,7 +14,7 @@ h1 {
 }
 
 h2, h3 {
-  color: #24292e;
+  /* color: #24292e; */
 }
 
 .question-card {
@@ -27,7 +32,7 @@ h2, h3 {
   float: left;
   width: 33.33%;
   padding: 10px;
-  /* height: 300px;  */
+  text-align: left;
 }
 
 /* Clear floats after the columns */
@@ -37,14 +42,42 @@ h2, h3 {
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: lighten;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .disable-card {
   pointer-events: none;
   opacity: 0.5;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.game-intro {
+  text-align: left;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
