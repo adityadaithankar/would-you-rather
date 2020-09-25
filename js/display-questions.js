@@ -16,6 +16,8 @@ let allQuestions = [{
   },
 ];
 
+var cardsRemaining = allQuestions.length;
+
 function getQuestion(questionType) {
   for (i = 0; i < allQuestions.length; i++) {
     if (allQuestions[i].type == questionType) {
@@ -39,7 +41,13 @@ function displayQuestion(questionsList) {
       questions.splice(random, 1);
     }
 
-  } else {
-    document.getElementById(questionsList.type + "-card").classList.add("disable-card");
+    if (!questions.length) {
+      document.getElementById(questionsList.type + "-card").classList.add("disable-card");
+      cardsRemaining = cardsRemaining - 1;
+      if (!cardsRemaining) {
+        document.getElementById("reload-game").style.display = "block";
+      }
+
+    }
   }
 }
