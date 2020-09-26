@@ -1,5 +1,4 @@
 body {
-  /* background-color: #fafbfc; */
   font-family: 'Comic Neue', cursive;
   text-align: center;
   line-height: 1.4;
@@ -9,11 +8,7 @@ body {
   margin: 0;
 }
 
-h1 {
-  margin: auto;
-}
-
-h2 {
+h1, h2 {
   margin: auto;
 }
 
@@ -34,4 +29,77 @@ header {
 
 main {
   flex: 1;
+}
+
+.top-nav {
+  background-color: #d9e3ee;
+  color: #091b25;
+}
+
+.text-background {
+  color: #d9e3ee;
+  background-color: #091b25;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+button {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1em;
+  background-color: #2ea44f;
+  color: #d9e3ee;
+  width: 25%;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  color: #d9e3ee;
+  background-color: #091b25;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d9e3ee;
+  font-size: 0.7em;
+  min-width: max-content;
+  text-align: left;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #091b25;
+  color: #d9e3ee;
+}
+
+.show {
+  display: block;
+}
+
+.footer {
+  margin-top: 10px;
+  padding: 10px;
+  bottom: 0;
+  color: #d9e3ee;
+  background-color: #091b25;
 }
