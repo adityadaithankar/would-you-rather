@@ -29,18 +29,10 @@
   .column {
     max-width: 200px;
   }
-
-  button {
-    width: 50%;
-  }
 }
 
 @media screen and (max-width: 600px) {
   .column {
     max-width: 150px;
-  }
-
-  button {
-    width: 75%;
   }
 }

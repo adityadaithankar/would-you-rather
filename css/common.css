@@ -103,3 +103,15 @@ button {
   color: #d9e3ee;
   background-color: #091b25;
 }
+
+@media screen and (max-width: 960px) {
+  button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    width: 75%;
+  }
+}
