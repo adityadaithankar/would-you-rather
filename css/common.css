@@ -31,6 +31,10 @@ main {
   flex: 1;
 }
 
+a {
+  color: #d9e3ee;
+}
+
 .top-nav {
   background-color: #d9e3ee;
   color: #091b25;
@@ -81,7 +85,7 @@ button {
 }
 
 .dropdown-content a {
-  color: black;
+  color: #091b25;
   padding: 10px 10px;
   text-decoration: none;
   display: block;
