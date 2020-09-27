@@ -64,8 +64,7 @@ button {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  color: #d9e3ee;
-  background-color: #091b25;
+  background-color: #a8b8ca;
 }
 
 .dropdown {
@@ -92,8 +91,7 @@ button {
 }
 
 .dropdown a:hover {
-  background-color: #091b25;
-  color: #d9e3ee;
+  background-color: #a8b8ca;
 }
 
 .show {
