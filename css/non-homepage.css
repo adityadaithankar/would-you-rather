@@ -10,6 +10,10 @@
   text-align: left;
 }
 
+.mid-button {
+  text-align: center;
+}
+
 .row:after {
   content: "";
   display: table;
