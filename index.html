@@ -22,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 
   <script src="js/dropdown.js"></script>
+  <script src="js/intro.js"></script>
   <script src="js/questions/gross.js"></script>
   <script src="js/questions/naughty.js"></script>
   <script src="js/questions/safe.js"></script>
@@ -51,12 +52,11 @@
 
     <main>
 
-      <p class="text-background">
-        Click on an image to reveal a question. Choose an answer. (You cannot say neither or both). Repeat.
+      <p id="in-game-help-text" class="text-background" style="display:none;">
+        Click on an image to reveal a question and then discuss each player's answer among yourselves.
       </p>
 
-      <div class="row">
-
+      <div id="cards-grid" class="row disable-cards-grid">
         <div class="column">
           <div class="question-card" id="weird-card" onclick="getQuestion('weird')">
             <img src="images/zombie.png" class="img-responsive">
@@ -81,6 +81,16 @@
           </div>
         </div>
 
+      </div>
+
+      <div id="intro" class="text-background intro-text">
+        <p>"Would you rather" is a conversation or party game that poses a dilemma in the form of a question beginning with "would you rather". Gather your friends around you to play this game.</p>
+        <p>Clicking on a image will reveal a question. Read the question out loud and let each player choose an answer from the two options. Saying "neither" or "both" is against the rules.</p>
+        <p>The questions are pretty interesting and what would be more interesting is the reason why your friends chose a particular answer. The fun lies in hearing the explanations of your friends on why they chose a particular answer.</p>
+        <p>Click on "START GAME" below when you are ready.</p>
+        <p style="text-align:center;">
+          <button onclick="hideIntro()">START GAME</button>
+        </p>
       </div>
 
       <div class="text-background">

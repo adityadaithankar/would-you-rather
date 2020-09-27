@@ -4,6 +4,12 @@
   height: auto;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .column {
   float: left;
   padding: 10px;
