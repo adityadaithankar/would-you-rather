@@ -4,5 +4,5 @@ let weird = [
   "eat pizza made of cardboard or pasta made of confetti",
   "have 3 feet or 3 hands",
   "wear peacock feathers hat or chicken feathers coat",
-  "crooked teeth or yellow teeth"
+  "have crooked teeth or yellow teeth"
 ];

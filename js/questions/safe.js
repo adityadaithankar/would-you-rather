@@ -3,7 +3,7 @@ let safe = [
   "have the power of flight or the power of invisibility",
   "have money or fame",
   "have lots of energy or have lots of money",
-  "listen to the same song for the rest of your life or watch the same movie for the rest of your life",
+  "listen to the same song or watch the same movie for the rest of your life",
   "lose your phone or your wallet",
-  "have free internet for life or free food"
+  "have free internet or free food for life"
 ];
