@@ -6,5 +6,6 @@ let naughty = [
   "get caught skinny dipping by strangers or catch your parents skinny dipping",
   "watch your parents in the act or let them watch you in the act",
   "get a really bad rash from a poor bikini wax job or have an entire eyebrow accidentally waxed off",
-  "be caught cheating or catch your spouse cheating"
+  "be caught cheating or catch your spouse cheating",
+  "spit or swallow"
 ];
